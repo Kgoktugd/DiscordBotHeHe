@@ -1,0 +1,7 @@
+client.on('message', msg => {
+
+let sa = msg.content.toLowerCase()
+if (sa === 'sa' || sa === 'selam' || sa === 'saa' || sa === 'selamun aleyküm' || sa === 'selamün aleyküm' || sa === 'sea' || sa === 'sae') {
+msg.channel.send(`**${msg.author.username}** Aleyküm Selam, Hoşgeldin!`)
+   }
+})
