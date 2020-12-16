@@ -1,0 +1,23 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+exports.run = (client, message) => {
+   message.channel.send('Hemen ölçüyorum abem.').then(message => {
+   var ss = ["**9cm** Hamsi kadar.","**31cm** wow Extremely large","**5cm** Senin malafatın yokmuş.","**17cm** İyi iyi."];
+      var ss= ss[Math.floor(Math.random() * ss.length)];
+            message.edit(`${ss}`);
+ });
+  }
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: ["kaçcm"],
+  permLevel: 0
+};
+
+exports.help = {
+  name: "kaçcm",
+  description: "Malafatını ölçer.",
+  usage: "kaçcm"
+};
